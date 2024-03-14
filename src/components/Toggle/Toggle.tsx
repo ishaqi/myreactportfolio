@@ -13,8 +13,8 @@ const Toggle = () => {
     setTheme(theme === 'light' ? 'dark' : 'light')  };
   return (
     <div className="toggle" onClick={handleClick}>
-      <FaMoon color="red"/>
-      <FaSun color="red"/>
+      <FaMoon color="orange"/>
+      <FaSun color="orange"/>
       <div
         className="t-button"
         style={theme === 'light' ? { left: "2px" } : { right: "2px" }}

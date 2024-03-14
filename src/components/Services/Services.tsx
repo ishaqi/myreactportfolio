@@ -1,17 +1,17 @@
 import React, { useContext } from "react";
 import "./Services.css";
 import Card from "../Card/Card";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
-import { themeContext } from "../../Context";
+import HeartEmoji from "src/assets/img/heartemoji.png";
+import Glasses from "src/assets/img/glasses.png";
+import Humble from "src/assets/img/humble.png";
+import { ThemeContext } from 'src/ThemeContext';
 import { motion } from "framer-motion";
 import Resume from './resume.pdf';
 
 const Services = () => {
   // context
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  const { theme }  = useContext(ThemeContext);
+  const darkMode = theme === 'dark';
 
   // transition
   const transition = {
@@ -26,11 +26,11 @@ const Services = () => {
         {/* dark mode */}
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
-        <spane>
+        <span>
           Lorem ispum is simpley dummy text of printing of printing Lorem
           <br />
           ispum is simpley dummy text of printing
-        </spane>
+        </span>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
         </a>

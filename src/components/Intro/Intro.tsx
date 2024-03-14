@@ -1,16 +1,16 @@
 import React, { useContext } from "react";
 import "./Intro.css";
-import Vector1 from "../../img/Vector1.png";
-import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
-import glassesimoji from "../../img/glassesimoji.png";
-import thumbup from "../../img/thumbup.png";
-import crown from "../../img/crown.png";
+import Vector1 from "src/assets/img/Vector1.png";
+import Vector2 from "src/assets/img/Vector2.png";
+import boy from "src/assets/img/boy.png";
+import glassesimoji from "src/assets/img/glassesimoji.png";
+import thumbup from "src/assets/img/thumbup.png";
+import crown from "src/assets/img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
-import Github from "../../img/github.png";
-import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
-import { themeContext } from "../../Context";
+import Github from "src/assets/img/github.png";
+import LinkedIn from "src/assets/img/linkedin.png";
+import Instagram from "src/assets/img/instagram.png";
+import { ThemeContext } from 'src/ThemeContext';
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 const Intro = () => {
@@ -18,8 +18,8 @@ const Intro = () => {
   const transition = { duration: 2, type: "spring" };
 
   // context
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  const { theme }  = useContext(ThemeContext);
+  const darkMode = theme === 'dark';
 
   return (
     <div className="Intro" id="Intro">
@@ -28,7 +28,7 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
+          <span>Ishaq Hashmi</span>
           <span>
             Frontend Developer with high level of experience in web designing
             and development, producting the Quality work
