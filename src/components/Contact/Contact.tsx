@@ -5,8 +5,8 @@ import { ThemeContext } from '../../ThemeContext';
 const Contact = () => {
   const { theme }  = useContext(ThemeContext);
   const darkMode = theme === 'dark'
-  const form = useRef();
-  const [done, setDone] = useState(false)
+  const form = useRef<HTMLFormElement>(null);
+  const [done,] = useState(false)
   // const sendEmail = (e) => {
   //   e.preventDefault();
 
