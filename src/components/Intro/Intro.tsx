@@ -10,7 +10,7 @@ import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "src/assets/img/github.png";
 import LinkedIn from "src/assets/img/linkedin.png";
 import Instagram from "src/assets/img/instagram.png";
-import { ThemeContext } from 'src/ThemeContext';
+import { ThemeContext } from '../../ThemeContext';
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 const Intro = () => {

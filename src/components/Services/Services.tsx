@@ -4,7 +4,7 @@ import Card from "../Card/Card";
 import HeartEmoji from "src/assets/img/heartemoji.png";
 import Glasses from "src/assets/img/glasses.png";
 import Humble from "src/assets/img/humble.png";
-import { ThemeContext } from 'src/ThemeContext';
+import { ThemeContext } from '../../ThemeContext';
 import { motion } from "framer-motion";
 import Resume from './resume.pdf';
 

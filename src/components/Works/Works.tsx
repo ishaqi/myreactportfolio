@@ -5,7 +5,7 @@ import Fiverr from "src/assets/img/fiverr.png";
 import Amazon from "src/assets/img/amazon.png";
 import Shopify from "src/assets/img/Shopify.png";
 import Facebook from "src/assets/img/Facebook.png";
-import { ThemeContext } from 'src/ThemeContext';
+import { ThemeContext } from '../../ThemeContext';
 import { motion } from "framer-motion";
 import {Link} from 'react-scroll'
 const Works = () => {
