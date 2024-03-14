@@ -30,7 +30,7 @@ const Intro = () => {
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span>Ishaq Hashmi</span>
           <span>
-            Frontend Developer with high level of experience in web designing
+            Fullstack Developer with high level of experience in web designing
             and development, producting the Quality work
           </span>
         </div>
@@ -40,15 +40,19 @@ const Intro = () => {
         {/* social icons */}
         <div className="i-icons">
           <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <img onClick={()=>{
+            window.open('https://www.linkedin.com/in/ishaq-hashmi-161a79aa','_blank')
+          }} src={LinkedIn} alt="" />
+          <img onClick={()=>{
+            window.open('https://www.instagram.com/ishaq__hashmi/','_blank')
+          }} src={Instagram} alt="" />
         </div>
       </div>
       {/* right image side */}
       <div className="i-right">
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        <img src={boy} alt="" width={200} height={380}/>
         {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}
@@ -64,7 +68,7 @@ const Intro = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv img={crown} text1="Frontend" text2="developer" />
         </motion.div>
 
         {/* animation */}
@@ -75,7 +79,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="Backend" text2="developer" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>

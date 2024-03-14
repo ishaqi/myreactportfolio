@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import "./Works.css";
-import Upwork from "src/assets/img/Upwork.png";
-import Fiverr from "src/assets/img/fiverr.png";
-import Amazon from "src/assets/img/amazon.png";
-import Shopify from "src/assets/img/Shopify.png";
-import Facebook from "src/assets/img/Facebook.png";
+import Extramarks from "src/assets/img/extramarks.png";
+import Uhc from "src/assets/img/uhc.png";
+import Onwheeler from "src/assets/img/onwheeler.png";
+import Notabene from "src/assets/img/notabene.jpeg";
+import Niit from "src/assets/img/niit.png";
 import { ThemeContext } from '../../ThemeContext';
 import { motion } from "framer-motion";
 import {Link} from 'react-scroll'
@@ -24,16 +24,10 @@ const Works = () => {
             Works for All these
           </span>
           <span>Brands & Clients</span>
-          <span>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
-            <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
-            <br />
-            y dummy text of printingLorem
-            <br />
-            ispum is simpley dummy text of printing
-          </span>
+          I possess experience working on various web application projects using ReactJS and Node.js. <br/>
+          <span>My journey began with NIIT Ltd., where I honed my skills in these technologies.</span> <br/>
+          Subsequently, I had the opportunity to contribute to projects at NotABene, Extramarks,
+           and UnitedHealthcare, each enriching my understanding of web development and problem-solving abilities.
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
           </Link>
@@ -54,19 +48,19 @@ const Works = () => {
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={Extramarks} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={Uhc} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src={Onwheeler} alt="" />
           </div>{" "}
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src={Notabene} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src={Niit} alt="" />
           </div>
         </motion.div>
         {/* background Circles */}
