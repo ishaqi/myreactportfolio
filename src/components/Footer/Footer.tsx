@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.css";
 import Wave from "/src/assets/img/wave.png";
 import { FaInstagram } from "react-icons/fa";

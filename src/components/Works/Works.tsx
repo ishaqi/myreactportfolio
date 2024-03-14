@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import "./Works.css";
 import Upwork from "src/assets/img/Upwork.png";
 import Fiverr from "src/assets/img/fiverr.png";

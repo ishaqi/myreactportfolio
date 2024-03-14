@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import "./Intro.css";
 import Vector1 from "src/assets/img/Vector1.png";
 import Vector2 from "src/assets/img/Vector2.png";
