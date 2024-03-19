@@ -13,6 +13,8 @@ import Instagram from "src/assets/img/instagram.png";
 import { ThemeContext } from '../../ThemeContext';
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import Resume from 'src/assets/resume.pdf';
+
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -34,9 +36,14 @@ const Intro = () => {
             and development, producting the Quality work
           </span>
         </div>
+        <div className="downloadwrapper">
         <Link to="contact" smooth={true} spy={true}>
           <button className="button i-button">Hire me</button>
         </Link>
+        <a href={Resume} download>
+          <button className="button s-button">Download CV</button>
+        </a>
+        </div>
         {/* social icons */}
         <div className="i-icons">
           <img src={Github} alt="" />

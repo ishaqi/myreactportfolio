@@ -109,3 +109,10 @@
     top: -7rem !important;;
   }
 }
+
+
+.downloadwrapper{
+  display: flex;
+  gap:16px;
+  align-items:baseline;
+}
