@@ -1,4 +1,4 @@
-import  { useContext, useRef, useState } from "react";
+import  { FormEvent, useContext, useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { ThemeContext } from '../../ThemeContext';
@@ -7,14 +7,15 @@ const Contact = () => {
   const darkMode = theme === 'dark'
   const form = useRef<HTMLFormElement>(null);
   const [done,setDone] = useState(false)
-  const sendEmail = (e) => {
+  const sendEmail = (e:FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(import.meta.env)
+    const data = form.current || ''
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
-        form.current,
+        data,
         'c3ar7sUFQPY1dcewD'
       )
       .then(
@@ -24,6 +25,7 @@ const Contact = () => {
           setTimeout(()=>{
             setDone(false)
           },2000)
+          if(form.current)
           form.current.reset();
         },
         (error) => {
